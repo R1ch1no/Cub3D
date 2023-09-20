@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+NO ./2d_imgs/GOLDROCKS.xpm
+
+
+F 97,87,90
+
+
+SO ./2d_imgs/ICEYROCKS.xpm
+
+C 156,8,4
+
+
+EA ./2d_imgs/LAVAROCKS.xpm
+
+
+WE ./2d_imgs/PATHROCKS.xpm
+
+
+11111111
+10000001
+10000001
+1000N001
+10000001
+10000001
+10000001
+11111111
+
+
