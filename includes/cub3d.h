@@ -6,7 +6,7 @@
 /*   By: nprljic <nprljic@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 19:05:12 by rkurnava          #+#    #+#             */
-/*   Updated: 2023/09/16 17:09:07 by nprljic          ###   ########.fr       */
+/*   Updated: 2023/09/22 17:12:41 by nprljic          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ typedef struct s_ray_cast
 	double				player_dir;
 	double				player_dir_x;
 	double				player_dir_y;
+	double				px_init;
+	double				py_init;
 	double				px;
 	double				py;
 	double				ray_angle;
@@ -127,6 +129,9 @@ int						free_data(t_data *data);
 // player_action.c
 int						keypress(int keysum, t_data *data);
 
+//player_action_utils.c
+void					outside(t_data *data);
+
 // ft_atoi.c
 int						ft_atoi(const char *nptr);
 
@@ -192,6 +197,7 @@ void					raylen_h(t_data *data, double angle, char **map);
 
 // opentextures.c
 void					load_all_textures(t_data *data);
+int						rm_space_in_front(t_handle_textures *d);
 
 // utils.c
 int						ft_strlen(const char *str);

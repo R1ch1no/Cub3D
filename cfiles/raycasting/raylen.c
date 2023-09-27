@@ -6,7 +6,7 @@
 /*   By: rkurnava <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 19:24:19 by rkurnava          #+#    #+#             */
-/*   Updated: 2023/09/13 19:35:39 by rkurnava         ###   ########.fr       */
+/*   Updated: 2023/09/26 13:47:25 by rkurnava         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,12 @@ int	hit(t_data *data, char **map, int ay, int ax)
 	if (map_x >= x_len)
 		return (0);
 	if (ay > 0 && ax > 0 && map[map_y][map_x] == ' ')
+		return (0);
+	if (((int)data->rays->py / TILE_SIZE < data->map_y && (int)data->rays->px
+			/ TILE_SIZE < data->map_x && (int)data->rays->py
+			/ TILE_SIZE > 0 && (int)data->rays->px
+			/ TILE_SIZE > 0) && map[(int)data->rays->py
+			/ TILE_SIZE][(int)data->rays->px / TILE_SIZE] == '1')
 		return (0);
 	if (ay > 0 && ax > 0 && map[map_y][map_x] != '1')
 		return (1);

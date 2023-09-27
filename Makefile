@@ -1,7 +1,7 @@
 
 NAME = cub3D
 
-CC = cc
+CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -21,6 +21,7 @@ SRC =	./cfiles/map_check/ft_getline/ft_getline_ultis.c\
 		./cfiles/map_check/map_colors.c \
 		./cfiles/map_check/map_colors_utils.c \
 		./cfiles/map_check/map_surrounded_by_walls.c \
+		./cfiles/map_check/map_textures_utils.c \
 		./cfiles/map_check/map_textures.c \
 		./cfiles/map_check/map_utils.c \
 		./cfiles/convertions.c \
@@ -32,10 +33,10 @@ SRC =	./cfiles/map_check/ft_getline/ft_getline_ultis.c\
 		./cfiles/window_draw.c \
 		./cfiles/window_loop.c \
 		./cfiles/player_action.c \
+		./cfiles/player_action_utils.c \
 		./cfiles/raycasting/raycasting.c \
 		./cfiles/raycasting/raylen.c \
 		./cfiles/raycasting/raycasting_utils1.c\
-
 
 SRC_BONUS =	./cfiles/map_check/ft_getline/ft_getline_ultis.c\
 		./cfiles/map_check/ft_getline/ft_getline.c \
@@ -49,6 +50,7 @@ SRC_BONUS =	./cfiles/map_check/ft_getline/ft_getline_ultis.c\
 		./cfiles/map_check/map_colors.c \
 		./cfiles/map_check/map_colors_utils.c \
 		./cfiles/map_check/map_surrounded_by_walls.c \
+		./cfiles/map_check/map_textures_utils.c \
 		./cfiles/map_check/map_textures.c \
 		./cfiles/map_check/map_utils.c \
 		./cfiles/convertions.c \
