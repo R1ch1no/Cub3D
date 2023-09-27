@@ -7,6 +7,6 @@ Goal of the project is to learn raycasting and how to use it in order to render 
 The player can move the camera point with WASD keys and change the camera angle with <- and -> keys.
 Game can be closed with either ESC key or X button on the window itself.
 Project uses Mlx library.
-You most probably will need to download MLX library and configure Makefile and headerfile based on mlx usage (whether the user install it on the device or wants to use archive file only).
+You most probably will need to download MLX library and configure Makefile and headerfile based on mlx usage (whether the user installs it on the device or wants to use archive file only).
 
 **Disclaimer:** All images and other resources included in this project are intended solely for educational and academic purposes. Any usage beyond these purposes may require appropriate permissions and is at the user's discretion.
